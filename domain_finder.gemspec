@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jade McGough"]
   spec.email         = ["jade@thezets.com"]
   spec.summary       = %q{Domain availability checker}
-  spec.description   = %q{Checks website domain availability from the command line}
-  spec.homepage      = "https://github.com/zetsubo"
+  spec.description   = %q{Check website domain availability from the command line}
+  spec.homepage      = "https://github.com/zetsubo/domain_finder"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -18,8 +18,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  #spec.add_development_dependency "bundler", "~> 1.5"
-  #spec.add_development_dependency "rake"
   spec.add_development_dependency "vcr", "~> 2.8"
 
 end
