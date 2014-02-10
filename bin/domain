@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/domain_finder'
+
+unless ARGV.empty?
+  puts DomainFinder::search(ARGV)
+else
+  puts 'Give me a domain name plskthx'
+end
