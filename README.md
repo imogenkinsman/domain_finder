@@ -1,29 +1,15 @@
-# DomainFinder
+# Domain Finder
 
-TODO: Write a gem description
+Say you're working on a new web project and suddenly think of a good name for it. "Well, this is sort of like Facebook, and also like Twitter," you muse. "I've got it - facetweet!"
+
+You _could_ open up a browser tab and check domains on a registrar. Or, you could search _right in your terminal_ with Domain Finder.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'domain_finder'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Easy peasy lemon squeezy:
 
     $ gem install domain_finder
 
 ## Usage
 
 TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( http://github.com/<my-github-username>/domain_finder/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
