@@ -4,7 +4,7 @@ Say you're working on a new web project and suddenly think of a good name for it
 
 You _could_ open up a browser tab and check domains on a registrar. Or, you could search _right in your terminal_ with domain_finder.
 
-![](https://github.com/zetsubo/domain_finder/blob/master/screenshots/domainfinder.png)
+![](screenshots/domainfinder.png)
 
 ## Installation
 
