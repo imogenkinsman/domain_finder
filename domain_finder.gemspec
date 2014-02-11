@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "vcr", "~> 2.8"
-  spec.add_development_dependency "rake", "~> 10.1.1"
+  spec.add_development_dependency "rake", "~> 10.1"
   spec.add_development_dependency "webmock", "~> 1.16"
-  spec.add_development_dependency "rspec", "~> 2.14.1"
+  spec.add_development_dependency "rspec", "~> 2.14"
 
 end
