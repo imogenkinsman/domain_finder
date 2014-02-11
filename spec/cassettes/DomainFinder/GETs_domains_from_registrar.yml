@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://domai.nr/api/json/search?q=thezets
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - "\"cbe3081c4d4868f313dce61692a3c7a2\""
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - c4809227-5138-4acd-9d78-8e9f0d217607
+      X-Runtime:
+      - '0.025812'
+      X-Ua-Compatible:
+      - chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '233'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"query\":\"thezets\",\"results\":[{\"domain\":\"thezets.com\",\"host\":\"\",\"subdomain\":\"thezets.com\",\"path\":\"\",\"availability\":\"taken\",\"register_url\":\"https://domai.nr/thezets.com/register\"},{\"domain\":\"thezets.net\",\"host\":\"\",\"subdomain\":\"thezets.net\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/thezets.net/register\"},{\"domain\":\"thezets.org\",\"host\":\"\",\"subdomain\":\"thezets.org\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/thezets.org/register\"},{\"domain\":\"thezets.co\",\"host\":\"\",\"subdomain\":\"thezets.co\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/thezets.co/register\"},{\"domain\":\"thezets.io\",\"host\":\"\",\"subdomain\":\"thezets.io\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/thezets.io/register\"},{\"domain\":\"thezets.me\",\"host\":\"\",\"subdomain\":\"thezets.me\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/thezets.me/register\"},{\"domain\":\"th\",\"host\":\"\",\"subdomain\":\"th\",\"path\":\"/ezets\",\"availability\":\"tld\",\"register_url\":\"https://domai.nr/th/register\"},{\"domain\":\"thez.et\",\"host\":\"\",\"subdomain\":\"thez.et\",\"path\":\"/s\",\"availability\":\"unavailable\",\"register_url\":\"https://domai.nr/thez.et/register\"}]}"
+    http_version: 
+  recorded_at: Tue, 11 Feb 2014 08:21:33 GMT
+recorded_with: VCR 2.8.0

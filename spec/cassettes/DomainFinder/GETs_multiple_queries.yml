@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://domai.nr/api/json/search?q=twitbook
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - "\"991602b3520ae947ebcfc13839765713\""
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 93da875e-09f8-41e6-a2f9-78e70cf33336
+      X-Runtime:
+      - '0.029765'
+      X-Ua-Compatible:
+      - chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '281'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"query\":\"twitbook\",\"results\":[{\"domain\":\"twitbook.com\",\"host\":\"\",\"subdomain\":\"twitbook.com\",\"path\":\"\",\"availability\":\"taken\",\"register_url\":\"https://domai.nr/twitbook.com/register\"},{\"domain\":\"twitbook.net\",\"host\":\"\",\"subdomain\":\"twitbook.net\",\"path\":\"\",\"availability\":\"taken\",\"register_url\":\"https://domai.nr/twitbook.net/register\"},{\"domain\":\"twitbook.org\",\"host\":\"\",\"subdomain\":\"twitbook.org\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/twitbook.org/register\"},{\"domain\":\"twitbook.co\",\"host\":\"\",\"subdomain\":\"twitbook.co\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/twitbook.co/register\"},{\"domain\":\"twitbook.io\",\"host\":\"\",\"subdomain\":\"twitbook.io\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/twitbook.io/register\"},{\"domain\":\"twitbook.me\",\"host\":\"\",\"subdomain\":\"twitbook.me\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/twitbook.me/register\"},{\"domain\":\"twit.bo\",\"host\":\"\",\"subdomain\":\"twit.bo\",\"path\":\"/ok\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/twit.bo/register\"},{\"domain\":\"twit.book\",\"host\":\"\",\"subdomain\":\"twit.book\",\"path\":\"\",\"availability\":\"maybe\",\"register_url\":\"https://domai.nr/twit.book/register\"},{\"domain\":\"tw\",\"host\":\"\",\"subdomain\":\"tw\",\"path\":\"/itbook\",\"availability\":\"tld\",\"register_url\":\"https://domai.nr/tw/register\"},{\"domain\":\"twit.boo\",\"host\":\"\",\"subdomain\":\"twit.boo\",\"path\":\"/k\",\"availability\":\"unavailable\",\"register_url\":\"https://domai.nr/twit.boo/register\"},{\"domain\":\"tw.it\",\"host\":\"\",\"subdomain\":\"tw.it\",\"path\":\"/book\",\"availability\":\"unavailable\",\"register_url\":\"https://domai.nr/tw.it/register\"}]}"
+    http_version: 
+  recorded_at: Tue, 11 Feb 2014 08:23:42 GMT
+- request:
+    method: get
+    uri: https://domai.nr/api/json/search?q=facetweet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - "\"690c76ea706deb2af84b658efa10e7dd\""
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 5a010c19-b461-4e9c-8cc0-072247e09466
+      X-Runtime:
+      - '0.033554'
+      X-Ua-Compatible:
+      - chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '288'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"query\":\"facetweet\",\"results\":[{\"domain\":\"facetweet.com\",\"host\":\"\",\"subdomain\":\"facetweet.com\",\"path\":\"\",\"availability\":\"taken\",\"register_url\":\"https://domai.nr/facetweet.com/register\"},{\"domain\":\"facetweet.net\",\"host\":\"\",\"subdomain\":\"facetweet.net\",\"path\":\"\",\"availability\":\"taken\",\"register_url\":\"https://domai.nr/facetweet.net/register\"},{\"domain\":\"facetweet.org\",\"host\":\"\",\"subdomain\":\"facetweet.org\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/facetweet.org/register\"},{\"domain\":\"facetweet.co\",\"host\":\"\",\"subdomain\":\"facetweet.co\",\"path\":\"\",\"availability\":\"taken\",\"register_url\":\"https://domai.nr/facetweet.co/register\"},{\"domain\":\"facetweet.io\",\"host\":\"\",\"subdomain\":\"facetweet.io\",\"path\":\"\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/facetweet.io/register\"},{\"domain\":\"facetweet.me\",\"host\":\"\",\"subdomain\":\"facetweet.me\",\"path\":\"\",\"availability\":\"taken\",\"register_url\":\"https://domai.nr/facetweet.me/register\"},{\"domain\":\"facetw.ee\",\"host\":\"\",\"subdomain\":\"facetw.ee\",\"path\":\"/t\",\"availability\":\"available\",\"register_url\":\"https://domai.nr/facetw.ee/register\"},{\"domain\":\"face.tw\",\"host\":\"\",\"subdomain\":\"face.tw\",\"path\":\"/eet\",\"availability\":\"maybe\",\"register_url\":\"https://domai.nr/face.tw/register\"},{\"domain\":\"facetwe.et\",\"host\":\"\",\"subdomain\":\"facetwe.et\",\"path\":\"\",\"availability\":\"unavailable\",\"register_url\":\"https://domai.nr/facetwe.et/register\"},{\"domain\":\"fac.et\",\"host\":\"\",\"subdomain\":\"fac.et\",\"path\":\"/weet\",\"availability\":\"unavailable\",\"register_url\":\"https://domai.nr/fac.et/register\"},{\"domain\":\"f.ac\",\"host\":\"\",\"subdomain\":\"f.ac\",\"path\":\"/etweet\",\"availability\":\"taken\",\"register_url\":\"https://domai.nr/f.ac/register\"}]}"
+    http_version: 
+  recorded_at: Tue, 11 Feb 2014 08:23:43 GMT
+recorded_with: VCR 2.8.0

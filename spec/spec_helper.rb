@@ -1,5 +1,6 @@
 require 'domain_finder'
 require 'vcr'
+require 'webmock/rspec'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
@@ -9,9 +10,9 @@ VCR.configure do |c|
 end
 
 RSpec.configure do |c|
-  config.treat_symbols_as_metadata_keys_with_true_values = true
+  c.treat_symbols_as_metadata_keys_with_true_values = true
 
-  config.expect_with :rspec do |c|
+  c.expect_with :rspec do |c|
     c.syntax = :expect
   end
 end

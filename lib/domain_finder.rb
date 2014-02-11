@@ -20,7 +20,7 @@ module DomainFinder
         results << "** #{domain} **" if domains.size > 1
 
         if res.is_a?(Net::HTTPSuccess)
-          results << parse_results(res.body)
+          results += parse_results(res.body)
         elsif res.is_a?(Net::HTTPBadRequest)
           results << "Registrar doesn't like your request. Try a different one."
         else
