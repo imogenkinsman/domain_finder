@@ -1,4 +1,4 @@
-# Domain Finder
+# Domain Finder [![Build Status](https://travis-ci.org/zetsubo/domain_finder.png?branch=master)](https://travis-ci.org/zetsubo/domain_finder)
 
 Say you're working on a new web project and suddenly think of a good name for it. "Well, this is sort of like Facebook, and also like Twitter," you muse. "I've got it - facetweet!"
 
