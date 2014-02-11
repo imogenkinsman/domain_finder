@@ -15,7 +15,8 @@ describe DomainFinder, :vcr do
   end
 
   it 'raises an error if the API response code is unexpected (not 200 or 400)' do
-    #stub_request(:get, )
+    stub_request(:get, "https://domai.nr/api/json/search?q=thezets").to_return(status: 500, body: '', headers: {})
+    expect{DomainFinder::search(['thezets'])}.to raise_error(RuntimeError, "Error 500 while accessing domain registrar")
   end
 
 end
