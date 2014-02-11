@@ -1,16 +1,16 @@
 describe DomainFinder, :vcr do
 
   it 'GETs domains from registrar' do
-    expect(DomainFinder::search(['thezets'])).to eq ["✘  thezets.com", "○  thezets.net", "○  thezets.org", "○  thezets.co",
-                                                     "○  thezets.io", "○  thezets.me", "✘  th", "✘  thez.et"]
+    expect(DomainFinder::search(['thezets'])).to eq ["x  thezets.com", "o  thezets.net", "o  thezets.org", "o  thezets.co",
+                                                     "o  thezets.io", "o  thezets.me", "x  th", "x  thez.et"]
   end
 
   it 'GETs multiple queries' do
     expect(DomainFinder::search(['twitbook', 'facetweet'])).
-        to eq ["** twitbook **", "✘  twitbook.com", "✘  twitbook.net","○  twitbook.org", "○  twitbook.co",
-               "○  twitbook.io", "○  twitbook.me", "○  twit.bo", "?  twit.book", "✘  tw", "✘  twit.boo", "✘  tw.it",
-               "** facetweet **", "✘  facetweet.com", "✘  facetweet.net", "○  facetweet.org", "✘  facetweet.co",
-               "○  facetweet.io", "✘  facetweet.me", "○  facetw.ee", "?  face.tw", "✘  facetwe.et", "✘  fac.et", "✘  f.ac"]
+        to eq ["** twitbook **", "x  twitbook.com", "x  twitbook.net","o  twitbook.org", "o  twitbook.co",
+               "o  twitbook.io", "o  twitbook.me", "o  twit.bo", "?  twit.book", "x  tw", "x  twit.boo", "x  tw.it",
+               "** facetweet **", "x  facetweet.com", "x  facetweet.net", "o  facetweet.org", "x  facetweet.co",
+               "o  facetweet.io", "x  facetweet.me", "o  facetw.ee", "?  face.tw", "x  facetwe.et", "x  fac.et", "x  f.ac"]
 
   end
 
