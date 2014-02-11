@@ -12,10 +12,16 @@ module DomainFinder
       results = []
 
       domains.each do |domain|
-        uri = URI(URL)
+        uri = URI.parse(URL)
         params = { q: domain }
         uri.query = URI.encode_www_form(params)
-        res = Net::HTTP.get_response(uri)
+
+        http = Net::HTTP.new(uri.host, uri.port)
+        http.use_ssl = true
+
+        request = Net::HTTP::Get.new(uri.request_uri)
+
+        res = http.request(request)
 
         results << "** #{domain} **" if domains.size > 1
 
@@ -39,11 +45,11 @@ module DomainFinder
       json['results'].map do |result|
         case result['availability']
         when 'available'
-          "○  #{result['domain']}"
+          "o  #{result['domain']}"
         when 'maybe'
           "?  #{result['domain']}"
         else
-          "✘  #{result['domain']}"
+          "x  #{result['domain']}"
         end
       end
     end
