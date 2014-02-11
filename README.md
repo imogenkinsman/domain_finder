@@ -43,3 +43,7 @@ domain facetweet twitbook
 ✘  twit.boo
 ✘  tw.it
 ```
+
+## Support
+
+domain_finder works (and is tested) with Ruby 1.9.3, 2.0.0 and 2.1.0.
