@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'domain_finder/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "domain_finder"
-  spec.version       = DomainFinder::VERSION
+  spec.version       = '0.0.3'
   spec.authors       = ["Jade McGough"]
   spec.email         = "jade@thezets.com"
   spec.summary       = %q{Domain availability checker}

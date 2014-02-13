@@ -1,4 +1,3 @@
-require "domain_finder/version"
 require 'json'
 require 'net/http'
 
