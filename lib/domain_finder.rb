@@ -1,11 +1,18 @@
 require 'json'
 require 'net/http'
 
+# Namespace for domain_finder gem
 module DomainFinder
 
+  # The URL of the domain registrar
   URL = 'https://domai.nr/api/json/search'
 
   class << self
+
+    # Searches for the availability of one or more domains by using a domain registrar API.
+    #
+    # @param domains [Array<String>] One or more domain names
+    # @return [Array<String>] Domain availability results
     def search(domains)
 
       results = []
@@ -39,8 +46,13 @@ module DomainFinder
 
     private
 
-    def parse_results(results)
-      json = JSON.parse(results)
+    # Parses JSON response from API call and converts it to an array of human-readable strings.
+    #
+    # @private
+    # @param json_string [String] A json-parsable string
+    # @return [Array<String>] An array of human-readable strings
+    def parse_results(json_string)
+      json = JSON.parse(json_string)
       json['results'].map do |result|
         case result['availability']
         when 'available'
