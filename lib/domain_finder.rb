@@ -27,16 +27,16 @@ module DomainFinder
 
         request = Net::HTTP::Get.new(uri.request_uri)
 
-        res = http.request(request)
+        response = http.request(request)
 
         results << "** #{domain} **" if domains.size > 1
 
-        if res.is_a?(Net::HTTPSuccess)
-          results += parse_results(res.body)
-        elsif res.is_a?(Net::HTTPBadRequest)
+        if response.is_a?(Net::HTTPSuccess)
+          results += parse_results(response.body)
+        elsif response.is_a?(Net::HTTPBadRequest)
           results << "Registrar doesn't like your request. Try a different one."
         else
-          raise "Error #{res.code} while accessing domain registrar"
+          raise "Error #{response.code} while accessing domain registrar"
         end
 
       end
