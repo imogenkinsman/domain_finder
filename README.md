@@ -1,5 +1,7 @@
 # Domain Finder [![Build Status](https://travis-ci.org/zetsubo/domain_finder.png?branch=master)](https://travis-ci.org/zetsubo/domain_finder)
 
+__11/29/2014 - this project has been abandoned, as the API it relies on has changed__
+
 Say you're working on a new web project and suddenly think of a good name for it. "Well, this is sort of like Facebook, and also like Twitter," you muse. "I've got it - facetweet!"
 
 You _could_ open up a browser tab and check domains on a registrar. Or, you could search _right in your terminal_ with domain_finder.
