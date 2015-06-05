@@ -1,4 +1,4 @@
-# Domain Finder [![Build Status](https://travis-ci.org/zetsubo/domain_finder.png?branch=master)](https://travis-ci.org/zetsubo/domain_finder)
+# Domain Finder [![Build Status](https://travis-ci.org/jademcgough/domain_finder.png?branch=master)](https://travis-ci.org/jademcgough/domain_finder)
 
 __11/29/2014 - this project has been abandoned, as the API it relies on has changed__
 
